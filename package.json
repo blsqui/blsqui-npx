@@ -1,0 +1,16 @@
+{
+  "name": "create-blsqui",
+  "version": "1.0.0",
+  "description": "Blsqui framework initializer",
+  "type": "module",
+  "bin": {
+    "create-blsqui": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "frontend/"
+  ],
+  "dependencies": {
+    "fs-extra": "^11.3.5"
+  }
+}
