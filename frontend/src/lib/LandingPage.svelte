@@ -117,6 +117,11 @@
         <button onclick={() => {if(scene === 2){ scene = 1 }else{fcl.unauthenticate()}}} class="px-8 bg-slate-900 border border-slate-700 hover:bg-slate-800 text-slate-400 py-4 rounded font-black uppercase">
           LEAVE
         </button>
+        {#if scene === 2}
+          <button onclick={() => { fcl.unauthenticate(); fcl.authenticate();}} class="px-8 bg-slate-900 border border-slate-700 hover:bg-slate-800 text-slate-400 py-4 rounded font-black uppercase">
+            Log Out & Log in again
+          </button>
+        {/if}
       {/if}
     </div>
   {/if}
